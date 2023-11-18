@@ -38,7 +38,7 @@ function ModuleRoutes(app) {
       course: req.params.cid,
       _id: new Date().getTime().toString(),
     };
-    Database.modules.push(newModule);
+    Database.modules.unshift(newModule);
     res.json(newModule);
   });
 
