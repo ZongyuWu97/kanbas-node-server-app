@@ -35,7 +35,7 @@ function AssignmentRoutes(app) {
       course: req.params.cid,
       _id: new Date().getTime().toString(),
     };
-    console.log(newAssignment)
+    // console.log(newAssignment)
     Database.assignments.unshift(newAssignment);
     res.json(newAssignment);
   });
