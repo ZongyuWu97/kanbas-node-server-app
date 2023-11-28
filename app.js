@@ -18,7 +18,7 @@ app.use(
   cors({
     credentials: true,
     // origin: [process.env.FRONTEND_URL]
-    origin: "*"
+    origin: 'https://a6--jazzy-entremet-1fd456.netlify.app'
   })
 );
 
